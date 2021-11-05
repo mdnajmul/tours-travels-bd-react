@@ -1,0 +1,34 @@
+.header-top-btn {
+  background-color: rgb(241, 20, 123);
+  color: rgb(247, 240, 240);
+  padding: 10px;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hover:hover {
+  background-color: rgb(13, 196, 53);
+  color: white !important;
+  padding: 5px;
+  border-radius: 5px;
+}
+.active {
+  background-color: rgb(13, 196, 53);
+  color: white !important;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.header {
+  background-color: #334960;
+  color: #fff;
+}
+.drop-text {
+  color: #fff !important;
+  font-weight: bold !important;
+  margin-left: 20px;
+  margin-top: -5px;
+}
