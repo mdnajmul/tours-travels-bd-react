@@ -1,0 +1,15 @@
+.text-clr {
+  color: rgb(241, 20, 123);
+  font-weight: bold;
+}
+.icon {
+  margin-right: 30px;
+  font-size: 16px;
+}
+.icon:hover {
+  color: rgb(40, 238, 218);
+  cursor: pointer;
+}
+.mt-10 {
+  margin-top: 40px !important;
+}

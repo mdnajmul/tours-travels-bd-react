@@ -41,7 +41,7 @@ const Header = () => {
             </NavLink>
             <NavDropdown
               title="Tours"
-              className="drop-text hover"
+              className="ms-5 hover"
               activeClassName="active"
             >
               <NavDropdown.Item href="#action/3.1">
@@ -56,7 +56,7 @@ const Header = () => {
             </NavDropdown>
             <NavDropdown
               title="Admin"
-              className="drop-text hover"
+              className="ms-5 hover"
               activeClassName="active"
             >
               <NavDropdown.Item href="#action/3.1">
@@ -71,14 +71,14 @@ const Header = () => {
             </NavDropdown>
             <NavLink
               to="/special"
-              className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
+              className="ms-5 text-white fw-bold text-decoration-none mt-1 hover"
               activeClassName="active"
             >
               Special Packages
             </NavLink>
             <NavLink
               to="/contact"
-              className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
+              className="ms-5 text-white fw-bold text-decoration-none mt-1 hover"
               activeClassName="active"
             >
               Contact Us
@@ -98,7 +98,7 @@ const Header = () => {
                 </button>
               </div>
             ) : (
-              <div className="my-auto">
+              <div className="mt-2">
                 <NavLink
                   className="text-decoration-none me-3 header-top-btn"
                   style={{ marginLeft: "120px" }}
