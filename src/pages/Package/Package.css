@@ -1,0 +1,13 @@
+.txt-justify {
+  text-align: justify;
+}
+.package-field {
+  background: rgba(247, 244, 244, 0.973);
+  border-radius: 10px;
+}
+.package-field img {
+  border-radius: 10px;
+}
+.icon-color {
+  color: gold;
+}

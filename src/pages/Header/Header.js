@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import useAuth from "../../hooks/useAuth";
 import "./Header.css";
 
@@ -27,66 +28,109 @@ const Header = () => {
           >
             <NavLink
               to="/home"
-              className="ms-5 text-white fw-bold hover text-decoration-none mt-1"
+              className="ms-3 text-white fw-bold hover text-decoration-none mt-1"
               activeClassName="active"
             >
               Home
             </NavLink>
             <NavLink
               to="/aboutus"
-              className="ms-5 text-white fw-bold text-decoration-none mt-1 hover"
+              className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
               activeClassName="active"
             >
               About Us
             </NavLink>
             <NavDropdown
               title="Tours"
-              className="ms-5 hover"
+              className="ms-3 hover"
               activeClassName="active"
             >
-              <NavDropdown.Item href="#action/3.1">
-                Bangladesh Packages
+              <NavDropdown.Item>
+                <Nav.Link
+                  as={HashLink}
+                  to="/#bangladesh"
+                  className="text-secondary fw-bold text-decoration-none hover"
+                  activeClassName="active"
+                >
+                  Bangladesh Packages
+                </Nav.Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                India Packages
+              <NavDropdown.Item>
+                <Nav.Link
+                  as={HashLink}
+                  to="/#india"
+                  className="text-secondary fw-bold text-decoration-none hover"
+                  activeClassName="active"
+                >
+                  India Packages
+                </Nav.Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Europe Packages
+              <NavDropdown.Item>
+                <Nav.Link
+                  as={HashLink}
+                  to="/#europe"
+                  className="text-secondary fw-bold text-decoration-none hover"
+                  activeClassName="active"
+                >
+                  Europe Packages
+                </Nav.Link>
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
               title="Admin"
-              className="ms-5 hover"
+              className="ms-3 hover"
               activeClassName="active"
             >
-              <NavDropdown.Item href="#action/3.1">
-                Manage Tour Packages
+              <NavDropdown.Item>
+                <NavLink
+                  to="/managetour"
+                  className="text-secondary fw-bold text-decoration-none hover"
+                  activeClassName="active"
+                >
+                  Manage Tour Packages
+                </NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Add Tour Package
+              <NavDropdown.Item>
+                <NavLink
+                  to="/addtour"
+                  className="text-secondary fw-bold text-decoration-none hover"
+                  activeClassName="active"
+                >
+                  Add Tour Package
+                </NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Manage Orders
+              <NavDropdown.Item>
+                <NavLink
+                  to="/manageorders"
+                  className="text-secondary fw-bold text-decoration-none hover"
+                  activeClassName="active"
+                >
+                  Manage Orders
+                </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
             <NavLink
               to="/special"
-              className="ms-5 text-white fw-bold text-decoration-none mt-1 hover"
+              className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
               activeClassName="active"
             >
               Special Packages
             </NavLink>
             <NavLink
               to="/contact"
-              className="ms-5 text-white fw-bold text-decoration-none mt-1 hover"
+              className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
               activeClassName="active"
             >
               Contact Us
             </NavLink>
             {user.displayName && (
-              <span className="ms-5 text-white fw-bold mt-1">
-                Hello ! {user.displayName}
-              </span>
+              <NavLink
+                to="/myorders"
+                className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
+                activeClassName="active"
+              >
+                My Orders
+              </NavLink>
             )}
             {user.displayName ? (
               <div className="my-auto">

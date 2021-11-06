@@ -3,7 +3,6 @@ import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
-  GithubAuthProvider,
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
@@ -13,7 +12,16 @@ initializeAuthentication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  const [packages, setPackages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("./bangladesh-tour.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setPackages(data);
+      });
+  }, []);
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
@@ -47,6 +55,7 @@ const useFirebase = () => {
     user,
     signInUsingGoogle,
     logOut,
+    packages,
     isLoading,
     setIsLoading,
   };
