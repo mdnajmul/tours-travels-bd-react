@@ -12,6 +12,7 @@ import Register from "./pages/Register/Register";
 import Shipping from "./pages/Shipping/Shipping";
 import Slider from "./pages/Slider/Slider";
 import TourDetails from "./pages/TourDetails/TourDetails";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -58,6 +59,10 @@ function App() {
             <Route exact path="/manageorders">
               <Header></Header>
               <ManageOrders></ManageOrders>
+            </Route>
+            <Route path="*">
+              <Header></Header>
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </BrowserRouter>
