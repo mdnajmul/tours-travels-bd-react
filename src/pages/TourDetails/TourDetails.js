@@ -7,10 +7,8 @@ import "./TourDetails.css";
 
 const TourDetails = () => {
   let { tourId } = useParams();
-  console.log(tourId);
   const { packages } = useAuth();
   const packageDetail = packages.filter((p) => p.key === parseInt(tourId));
-  console.log(packageDetail);
 
   const {
     key,

@@ -1,9 +1,11 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./context/AuthProvider";
+import AddTourPackage from "./pages/AddTourPackage/AddTourPackage";
 import BangladeshPackages from "./pages/BangladeshPackages/BangladeshPackages";
 import BottomNav from "./pages/BottomNav/BottomNav";
 import Header from "./pages/Header/Header";
+import Shipping from "./pages/Shipping/Shipping";
 import Slider from "./pages/Slider/Slider";
 import TourDetails from "./pages/TourDetails/TourDetails";
 
@@ -28,6 +30,14 @@ function App() {
             <Route exact path="/tourdetails/:tourId">
               <Header></Header>
               <TourDetails></TourDetails>
+            </Route>
+            <Route exact path="/shipping/:tourId">
+              <Header></Header>
+              <Shipping></Shipping>
+            </Route>
+            <Route exact path="/addtour">
+              <Header></Header>
+              <AddTourPackage></AddTourPackage>
             </Route>
           </Switch>
         </BrowserRouter>
