@@ -8,6 +8,7 @@ import Header from "./pages/Header/Header";
 import Login from "./pages/Login/Login";
 import ManageOrders from "./pages/ManageOrders/ManageOrders";
 import ManageTourPackages from "./pages/ManageTourPackages/ManageTourPackages";
+import Register from "./pages/Register/Register";
 import Shipping from "./pages/Shipping/Shipping";
 import Slider from "./pages/Slider/Slider";
 import TourDetails from "./pages/TourDetails/TourDetails";
@@ -33,6 +34,10 @@ function App() {
             <Route exact path="/login">
               <Header></Header>
               <Login></Login>
+            </Route>
+            <Route exact path="/register">
+              <Header></Header>
+              <Register></Register>
             </Route>
             <Route exact path="/tourdetails/:tourId">
               <Header></Header>
