@@ -5,6 +5,7 @@ import AddTourPackage from "./pages/AddTourPackage/AddTourPackage";
 import BangladeshPackages from "./pages/BangladeshPackages/BangladeshPackages";
 import BottomNav from "./pages/BottomNav/BottomNav";
 import Header from "./pages/Header/Header";
+import ManageTourPackages from "./pages/ManageTourPackages/ManageTourPackages";
 import Shipping from "./pages/Shipping/Shipping";
 import Slider from "./pages/Slider/Slider";
 import TourDetails from "./pages/TourDetails/TourDetails";
@@ -38,6 +39,10 @@ function App() {
             <Route exact path="/addtour">
               <Header></Header>
               <AddTourPackage></AddTourPackage>
+            </Route>
+            <Route exact path="/managetour">
+              <Header></Header>
+              <ManageTourPackages></ManageTourPackages>
             </Route>
           </Switch>
         </BrowserRouter>
