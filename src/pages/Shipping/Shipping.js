@@ -19,7 +19,9 @@ const Shipping = () => {
   return (
     <div className="shipping-form mt-100">
       <div>
-        <h2 className="text-center">Shipping Adress</h2>
+        <h2 className="text-center text-success fw-bold mb-3">
+          Shipping Adress
+        </h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             placeholder="Your name"
@@ -36,7 +38,6 @@ const Shipping = () => {
           )}
           <input
             placeholder="Your phone number"
-            defaultValue=""
             {...register("phone", { required: true })}
           />
           {errors.phone && (
@@ -52,7 +53,7 @@ const Shipping = () => {
             defaultValue=""
             {...register("address")}
           />
-          <input type="submit" />
+          <input className="header-top-btn" type="submit" />
         </form>
       </div>
     </div>
