@@ -23,7 +23,7 @@ const ManageTourPackages = () => {
             <td>4 Nights 3 Days (2 Nights stay at Saint Martins Island)</td>
             <td>BDT 9500</td>
             <td>
-              <button className="header-top-btn">Delete</button>
+              <button className="delete-btn">Delete</button>
             </td>
           </tr>
           <tr>
