@@ -15,7 +15,7 @@ const BangladeshPackages = () => {
       </div>
       <div className="home-services-field mt-3">
         {packages.map((p) => (
-          <Package key={p.id} package={p}></Package>
+          <Package key={p.key} package={p}></Package>
         ))}
       </div>
     </section>

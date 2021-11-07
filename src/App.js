@@ -5,6 +5,7 @@ import BangladeshPackages from "./pages/BangladeshPackages/BangladeshPackages";
 import BottomNav from "./pages/BottomNav/BottomNav";
 import Header from "./pages/Header/Header";
 import Slider from "./pages/Slider/Slider";
+import TourDetails from "./pages/TourDetails/TourDetails";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
               <BottomNav></BottomNav>
               <Slider></Slider>
               <BangladeshPackages></BangladeshPackages>
+            </Route>
+            <Route exact path="/tourdetails/:tourId">
+              <Header></Header>
+              <TourDetails></TourDetails>
             </Route>
           </Switch>
         </BrowserRouter>

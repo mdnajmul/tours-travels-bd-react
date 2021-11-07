@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import "./Package.css";
 
 const Package = (props) => {
-  const { id, name, img, price, duration, rating } = props.package;
+  const { key, name, img, price, duration, rating } = props.package;
   return (
     <div className="package-field">
       <div className="text-center">
@@ -37,9 +37,9 @@ const Package = (props) => {
         <NavLink
           className="text-decoration-none me-3 header-top-btn"
           style={{ marginLeft: "140px" }}
-          to={`/servicedetails/${id}`}
+          to={`/tourdetails/${key}`}
         >
-          Details
+          View Details
         </NavLink>
       </div>
     </div>

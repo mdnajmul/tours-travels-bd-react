@@ -28,14 +28,14 @@ const Header = () => {
           >
             <NavLink
               to="/home"
-              className="ms-3 text-white fw-bold hover text-decoration-none mt-1"
+              className="ms-3 text-white fw-bold hover text-decoration-none mt-2"
               activeClassName="active"
             >
               Home
             </NavLink>
             <NavLink
               to="/aboutus"
-              className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
+              className="ms-3 text-white fw-bold text-decoration-none mt-2 hover"
               activeClassName="active"
             >
               About Us
@@ -111,14 +111,14 @@ const Header = () => {
             </NavDropdown>
             <NavLink
               to="/special"
-              className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
+              className="ms-3 text-white fw-bold text-decoration-none mt-2 hover"
               activeClassName="active"
             >
               Special Packages
             </NavLink>
             <NavLink
               to="/contact"
-              className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
+              className="ms-3 text-white fw-bold text-decoration-none mt-2 hover"
               activeClassName="active"
             >
               Contact Us
@@ -126,7 +126,7 @@ const Header = () => {
             {user.displayName && (
               <NavLink
                 to="/myorders"
-                className="ms-3 text-white fw-bold text-decoration-none mt-1 hover"
+                className="ms-3 text-white fw-bold text-decoration-none mt-2 hover"
                 activeClassName="active"
               >
                 My Orders
