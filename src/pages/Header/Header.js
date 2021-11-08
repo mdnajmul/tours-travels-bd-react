@@ -123,7 +123,7 @@ const Header = () => {
             >
               Contact Us
             </NavLink>
-            {user.displayName && (
+            {user.email && (
               <NavLink
                 to="/myorders"
                 className="ms-3 text-white fw-bold text-decoration-none mt-2 hover"
@@ -132,7 +132,7 @@ const Header = () => {
                 My Orders
               </NavLink>
             )}
-            {user.displayName ? (
+            {user.email ? (
               <div className="my-auto">
                 <button
                   className="text-decoration-none ms-3 logout-btn"

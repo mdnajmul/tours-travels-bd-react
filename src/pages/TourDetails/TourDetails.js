@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Rating from "react-rating";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
-import useAuth from "../../hooks/useAuth";
 import "./TourDetails.css";
 
 const TourDetails = () => {
   let { tourId } = useParams();
-  const { packages } = useAuth();
-  const packageDetail = packages.filter((p) => p.key === parseInt(tourId));
+  const [tourPackage, setTourPackage] = useState({});
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/tourpackages/${tourId}`)
+      .then((res) => res.json())
+      .then((data) => setTourPackage(data));
+  }, []);
 
   const {
-    key,
+    _id,
     name,
     price,
     detailImg1,
@@ -24,7 +28,7 @@ const TourDetails = () => {
     facility,
     country,
     rating,
-  } = packageDetail[0];
+  } = tourPackage;
   return (
     <section className="container mt-5">
       <h2 className="text-center text-success fw-bold mt-100">{name}</h2>
@@ -80,7 +84,7 @@ const TourDetails = () => {
           <p className="mt-4">
             <NavLink
               className="text-decoration-none header-top-btn"
-              to={`/shipping/${key}`}
+              to={`/shipping/${_id}`}
             >
               Book Now
             </NavLink>

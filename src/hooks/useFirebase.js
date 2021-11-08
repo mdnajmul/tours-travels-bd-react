@@ -16,7 +16,7 @@ const useFirebase = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("./bangladesh-tour.json")
+    fetch("http://localhost:5000/tourpackages")
       .then((res) => res.json())
       .then((data) => {
         setPackages(data);

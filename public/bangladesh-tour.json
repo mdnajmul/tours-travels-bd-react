@@ -1,6 +1,5 @@
 [
   {
-    "key": 101,
     "name": "Dhaka–Cox’s Bazar–Dhaka",
     "img": "https://i.ibb.co/W6ZYSJv/coxbazar.jpg",
     "detailImg1": "https://i.ibb.co/KDrG0xG/cox-1.jpg",
@@ -16,7 +15,6 @@
     "rating": 4
   },
   {
-    "key": 102,
     "name": "Dhaka-St. Martins Island-Dhaka",
     "img": "https://i.ibb.co/q5fwLKZ/saint-martin.jpg",
     "detailImg1": "https://i.ibb.co/vYPsqGw/saint-1.jpg",
@@ -32,7 +30,6 @@
     "rating": 3
   },
   {
-    "key": 103,
     "name": "Dhaka-Rangamati-Bandarban-Dhaka",
     "img": "https://i.ibb.co/41qxg3R/bandarban.jpg",
     "detailImg1": "https://i.ibb.co/2qxybLQ/rangamati-1.jpg",
@@ -48,7 +45,6 @@
     "rating": 5
   },
   {
-    "key": 104,
     "name": "Dhaka-Sundarbans-Dhaka",
     "img": "https://i.ibb.co/bHZb3jt/Sundarban.jpg",
     "detailImg1": "https://i.ibb.co/72tPsWr/sundarban-1.jpg",
@@ -64,7 +60,6 @@
     "rating": 5
   },
   {
-    "key": 105,
     "name": "Dhaka-Sylhet-Srimongal-Dhaka",
     "img": "https://i.ibb.co/b2sG8Tg/sylhet.jpg",
     "detailImg1": "https://i.ibb.co/DbkRhcd/sylhet-1.jpg",
@@ -80,7 +75,6 @@
     "rating": 5
   },
   {
-    "key": 106,
     "name": "Dhaka-Kuakata-Dhaka",
     "img": "https://i.ibb.co/vdwwjyS/kuakata.jpg",
     "detailImg1": "https://i.ibb.co/mFNG9rM/kuakata-1.jpg",

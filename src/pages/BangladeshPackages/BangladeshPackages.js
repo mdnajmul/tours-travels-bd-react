@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import Package from "../Package/Package";
 import "./BangladeshPackages.css";
@@ -15,7 +13,7 @@ const BangladeshPackages = () => {
       </div>
       <div className="home-services-field mt-3">
         {packages.map((p) => (
-          <Package key={p.key} package={p}></Package>
+          <Package key={p._id} package={p}></Package>
         ))}
       </div>
     </section>
