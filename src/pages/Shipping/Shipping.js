@@ -36,11 +36,13 @@ const Shipping = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             placeholder="Your name"
+            readOnly
             defaultValue={user?.displayName}
             {...register("name")}
           />
           <input
             placeholder="Your email"
+            readOnly
             defaultValue={email}
             {...register("email", { required: true })}
           />

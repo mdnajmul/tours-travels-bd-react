@@ -24,6 +24,19 @@ const ManageOrders = () => {
       });
   };
 
+  // const status = "apporved";
+  const handleUpdate = (id) => {
+    fetch(`http://localhost:5000/updateStatus/${id}`, {
+      method: "PUT",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.modifiedCount) {
+          setReload(!reload);
+        }
+      });
+  };
+
   return (
     <section className="container">
       <h2 className="text-center text-success fw-bold mt-100 mb-3">
@@ -47,12 +60,17 @@ const ManageOrders = () => {
               <td>{order.email}</td>
               <td>{order.status}</td>
               <td>
-                {order.status === "success" ? (
+                {order.status === "approved" ? (
                   <button className="btn btn-secondary me-3" disabled>
                     Update Status
                   </button>
                 ) : (
-                  <button className="update-btn me-3">Update Status</button>
+                  <button
+                    onClick={() => handleUpdate(order?._id)}
+                    className="update-btn me-3"
+                  >
+                    Update Status
+                  </button>
                 )}
                 <button
                   onClick={() => handleDelete(order?._id)}

@@ -67,13 +67,23 @@ const MyOrders = () => {
                 </p>
               </div>
               <div className="mb-3 mt-3">
-                <button
-                  onClick={() => handleDelete(order?._id)}
-                  className="delete-btn"
-                  style={{ marginLeft: "100px" }}
-                >
-                  Cancel
-                </button>
+                {order?.status === "approved" ? (
+                  <button
+                    className="btn btn-secondary me-3"
+                    style={{ marginLeft: "130px" }}
+                    disabled
+                  >
+                    Cancel
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => handleDelete(order?._id)}
+                    className="delete-btn"
+                    style={{ marginLeft: "100px" }}
+                  >
+                    Cancel
+                  </button>
+                )}
               </div>
               <p className="ps-3 pe-3">
                 <hr />
