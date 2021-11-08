@@ -30,6 +30,7 @@ const Register = () => {
   const handleGoogleSignIn = () => {
     signInUsingGoogle()
       .then((result) => {
+        sessionStorage.setItem("email", result.user.email);
         setError("");
         history.push(redirect_uri);
       })
@@ -79,6 +80,7 @@ const Register = () => {
     }
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
+        sessionStorage.setItem("email", result.user.email);
         setError("");
         updateUserProfile();
         history.push(redirect_uri);

@@ -24,6 +24,7 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     signInUsingGoogle()
       .then((result) => {
+        sessionStorage.setItem("email", result.user.email);
         setError("");
         history.push(redirect_uri);
       })
@@ -50,6 +51,7 @@ const Login = () => {
     }
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
+        sessionStorage.setItem("email", result.user.email);
         setError("");
         history.push(redirect_uri);
       })

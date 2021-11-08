@@ -15,6 +15,7 @@ const useFirebase = () => {
   const [packages, setPackages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  //get all packages
   useEffect(() => {
     fetch("http://localhost:5000/tourpackages")
       .then((res) => res.json())
@@ -35,6 +36,7 @@ const useFirebase = () => {
     setIsLoading(true);
     signOut(auth)
       .then(() => {
+        sessionStorage.removeItem("email");
         setUser({});
       })
       .finally(() => setIsLoading(false));

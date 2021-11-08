@@ -13,6 +13,7 @@ import Shipping from "./pages/Shipping/Shipping";
 import Slider from "./pages/Slider/Slider";
 import TourDetails from "./pages/TourDetails/TourDetails";
 import NotFound from "./pages/NotFound/NotFound";
+import MyOrders from "./pages/MyOrders/MyOrders";
 
 function App() {
   return (
@@ -59,6 +60,10 @@ function App() {
             <Route exact path="/manageorders">
               <Header></Header>
               <ManageOrders></ManageOrders>
+            </Route>
+            <Route exact path="/myorders">
+              <Header></Header>
+              <MyOrders></MyOrders>
             </Route>
             <Route path="*">
               <Header></Header>

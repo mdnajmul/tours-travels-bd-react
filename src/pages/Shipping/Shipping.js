@@ -6,14 +6,25 @@ import "./Shipping.css";
 
 const Shipping = () => {
   let { tourId } = useParams();
+  const email = sessionStorage.getItem("email");
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm();
-  const { user } = useAuth();
+  const { user, packages } = useAuth();
   const onSubmit = (data) => {
+    const orderDetails = packages.filter((p) => p._id === tourId);
+    data.orderDetails = orderDetails;
+    data.status = "pending";
+    fetch("http://localhost:5000/confirmOrder", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => console.log(result));
     console.log(data);
   };
   return (
@@ -25,12 +36,12 @@ const Shipping = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             placeholder="Your name"
-            defaultValue={user.displayName}
+            defaultValue={user?.displayName}
             {...register("name")}
           />
           <input
             placeholder="Your email"
-            defaultValue={user.email}
+            defaultValue={email}
             {...register("email", { required: true })}
           />
           {errors.email && (
