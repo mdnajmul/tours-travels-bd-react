@@ -9,7 +9,18 @@ const AddTourPackage = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    fetch("http://localhost:5000/addtourpackage", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if (result.insertedId) {
+          alert("Tour Package Added Successfully!");
+          reset();
+        }
+      });
   };
   return (
     <div className="shipping-form mt-100">
@@ -68,7 +79,7 @@ const AddTourPackage = () => {
             {...register("visitedPlaces")}
           />
           <textarea placeholder="Facility Included" {...register("facility")} />
-          <select {...register("country")}>
+          <select {...register("catagory")}>
             <option value="">Destination</option>
             <option value="Bangladesh">Bangladesh</option>
             <option value="India">India</option>

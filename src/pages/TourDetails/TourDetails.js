@@ -26,7 +26,7 @@ const TourDetails = () => {
     shortDetail,
     visitedPlaces,
     facility,
-    country,
+    catagory,
     rating,
   } = tourPackage;
   return (
@@ -69,8 +69,8 @@ const TourDetails = () => {
             <span className="text-primary"> (Per Person)</span>
           </p>
           <p>
-            <span className="text-info fw-bold">Country: </span>
-            <span className="text-primary fw-bold">{country}</span>
+            <span className="text-info fw-bold">Catagory: </span>
+            <span className="text-primary fw-bold">{catagory}</span>
           </p>
           <p>
             <span className="text-info fw-bold">Review: </span>
