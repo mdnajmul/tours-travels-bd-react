@@ -13,15 +13,19 @@ const ManageOrders = () => {
   }, [reload]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/delteOrder/${id}`, {
-      method: "DELETE",
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.deletedCount) {
-          setReload(!reload);
-        }
-      });
+    const procced = window.confirm("Are you sure, you want to delete?");
+    if (procced) {
+      fetch(`http://localhost:5000/delteOrder/${id}`, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.deletedCount) {
+            alert("Order Deleted Successfully!");
+            setReload(!reload);
+          }
+        });
+    }
   };
 
   // const status = "apporved";
