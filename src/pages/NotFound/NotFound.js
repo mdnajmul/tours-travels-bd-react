@@ -9,7 +9,7 @@ const NotFound = () => {
         The page you are looking for is not available
       </h3>
       <div className="text-center">
-        <button type="button" className="btn login-btn mt-2">
+        <button type="button" className="btn login-btn mt-2 mb-3">
           <Link to="/" className="text-decoration-none text-white">
             Back
           </Link>
