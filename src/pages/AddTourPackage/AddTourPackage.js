@@ -19,6 +19,7 @@ const AddTourPackage = () => {
         if (result.insertedId) {
           alert("Tour Package Added Successfully!");
           reset();
+          window.location.href = window.location.href;
         }
       });
   };

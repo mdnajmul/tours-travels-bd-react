@@ -14,6 +14,7 @@ import Slider from "./pages/Slider/Slider";
 import TourDetails from "./pages/TourDetails/TourDetails";
 import NotFound from "./pages/NotFound/NotFound";
 import MyOrders from "./pages/MyOrders/MyOrders";
+import IndiaPackages from "./pages/IndiaPackages/IndiaPackages";
 
 function App() {
   return (
@@ -26,12 +27,14 @@ function App() {
               <BottomNav></BottomNav>
               <Slider></Slider>
               <BangladeshPackages></BangladeshPackages>
+              <IndiaPackages></IndiaPackages>
             </Route>
             <Route exact path="/home">
               <Header></Header>
               <BottomNav></BottomNav>
               <Slider></Slider>
               <BangladeshPackages></BangladeshPackages>
+              <IndiaPackages></IndiaPackages>
             </Route>
             <Route exact path="/login">
               <Header></Header>

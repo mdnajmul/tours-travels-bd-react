@@ -36,6 +36,7 @@ const ManageOrders = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {
+          alert("Status updated successfully!");
           setReload(!reload);
         }
       });
