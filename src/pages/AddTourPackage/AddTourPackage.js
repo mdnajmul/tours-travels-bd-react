@@ -81,7 +81,7 @@ const AddTourPackage = () => {
           />
           <textarea placeholder="Facility Included" {...register("facility")} />
           <select {...register("catagory")}>
-            <option value="">Destination</option>
+            <option value="">Catagory</option>
             <option value="Bangladesh">Bangladesh</option>
             <option value="India">India</option>
             <option value="Europe">Europe</option>

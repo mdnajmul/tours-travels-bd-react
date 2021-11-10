@@ -9,17 +9,23 @@ const BangladeshPackages = () => {
     (p) => p.catagory === "Bangladesh"
   );
   return (
-    <section id="bangladesh" className="container mt-5">
-      <div>
-        <h2 className="text-center text-success fw-bold">Bangladesh Tour</h2>
-        <hr className="text-center text-red fw-bold" />
-      </div>
-      <div className="home-services-field mt-3">
-        {bangladeshPackages.map((p) => (
-          <Package key={p._id} package={p}></Package>
-        ))}
-      </div>
-    </section>
+    <div>
+      {bangladeshPackages.length > 0 && (
+        <section id="bangladesh" className="container mt-5">
+          <div>
+            <h2 className="text-center text-success fw-bold">
+              Bangladesh Tours
+            </h2>
+            <hr className="text-center text-red fw-bold" />
+          </div>
+          <div className="home-services-field mt-3">
+            {bangladeshPackages.map((p) => (
+              <Package key={p._id} package={p}></Package>
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
   );
 };
 

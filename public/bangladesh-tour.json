@@ -11,7 +11,7 @@
     "price": 8000,
     "visitedPlaces": "Kalatali Beach,Laboni Beach, Sugnadha Beach, Inani Beach, Himchhari Falls, Moheshkhali Island by Boat, Dulahazara Safari Park, Sunset and Night Beach, Barmiz Market",
     "facility": "Non AC Transport, Daily Breakfast , Lunch & Diner at Local Restaurant, Hotel Accommodation Non AC (Twin/Double Share)",
-    "country": "Bangladesh",
+    "catagory": "Bangladesh",
     "rating": 4
   },
   {
@@ -26,7 +26,7 @@
     "price": 9000,
     "visitedPlaces": "Watch The Memorable Beach Sunset,Sunrise From The Beach In Early Morning,Chhera Dwip,Beach Cycling, Beach Swimming",
     "facility": "AC Transport,Keari Cruise and Dine, Daily Breakfast , Lunch & Diner at Local Restaurant, Hotel Accommodation Non AC (Twin/Double Share)",
-    "country": "Bangladesh",
+    "catagory": "Bangladesh",
     "rating": 3
   },
   {
@@ -41,7 +41,7 @@
     "price": 9500,
     "visitedPlaces": "Cruise on Kaptai Lake,Subholong by Boat,Hanging Bridge,Peda Ting Ting and Tuk Tuk Eco Village,Sangu River,Swarna Mandir and Chakma Rajbari,Nilgiri,Chimbuk and Shoilopropat",
     "facility": "Hotel Accommodation (3* Hotel & Twin Basis),Daily Breakfast , Lunch & Diner at Local Restaurant,A/C Bus tickets,Meal Included as per our itinerary",
-    "country": "Bangladesh",
+    "catagory": "Bangladesh",
     "rating": 5
   },
   {
@@ -56,7 +56,7 @@
     "price": 9000,
     "visitedPlaces": "Cruising towards the Sundarbans Forest,Hiking in the Kotka Forest area to see wild life and forest,Jungle walk,Cruising towards Kochikhali wildlife sanctuary,Overnight on the boat at Kochikhali",
     "facility": "Hotel Accommodation Non AC (Twin/Double Share),Bar – B – Q dinner on boat,Daily Breakfast ,Lunch & Diner at Local Restaurant,A/C Bus tickets,Meal Included as per our itinerary",
-    "country": "Bangladesh",
+    "catagory": "Bangladesh",
     "rating": 5
   },
   {
@@ -71,7 +71,7 @@
     "price": 9500,
     "visitedPlaces": "Sylhet City,Jaflong,Bisnakandi,Ratargul Swamp Forest,Lawachara National Park,Lalakhal Boat Trip,Madhabpur Lake",
     "facility": "Hotel Accommodation (3* Hotel & Twin Basis),Daily Buffet Breakfast at Hotel,Meal Included as per our itinerary,Dhaka- Srimongol- Sylhet- Dhaka A/C Bus tickets,Daily Breakfast , Lunch & Diner at Local Restaurant",
-    "country": "Bangladesh",
+    "catagory": "Bangladesh",
     "rating": 5
   },
   {
@@ -86,7 +86,7 @@
     "price": 7000,
     "visitedPlaces": "Fatrar Forest, Pilgrimage, Tribal Life in the Rakhain Village, Gangamati or Gajamati Forest, Shutki Polli, Keranipara Shema Mondir, Kuakata Buddhist Temple, Kuakata Eco Park, Lebur Chor,Beauty of Sunrise and Sunset from Beach",
     "facility": "Hotel Accommodation (3* Hotel & Twin Basis),Daily Breakfast , Lunch & Diner at Local Restaurant,Meal Included as per our itinerary,AC Bus Ticket",
-    "country": "Bangladesh",
+    "catagory": "Bangladesh",
     "rating": 5
   },
   {
@@ -136,16 +136,46 @@
   },
   {
     "name": "Italy France & Switzerland",
-    "img": "",
-    "detailImg1": "",
-    "detailImg2": "",
-    "detailImg3": "",
+    "img": "https://i.ibb.co/X4rc0K1/italy-france-spain.jpg",
+    "detailImg1": "https://i.ibb.co/YfjJ9PJ/italy-france-spain-1.jpg",
+    "detailImg2": "https://i.ibb.co/JvKtdr2/italy-france-spain-2.jpg",
+    "detailImg3": "https://i.ibb.co/k1Gf5Gh/italy-france-spain-3.jpg",
     "type": "Business Class",
-    "duration": "10 Days-9 Night",
+    "duration": "10 Days- 9 Nights",
     "shortDetail": "The second smallest continent in the world, Europe covers 2% of the Earth’s surface and 6.7% of the Earth’s land. With 47 countries and a population of 742.5 million (2013 census), it is the third most populated continent in the world. Bordered by the Atlantic Ocean on the west, Arctic Ocean on the north, Ural mountains in the east, and the Mediterranean Sea to the South, a visit to the European continent is visually magnificent and historically significant.",
-    "price": 79000,
-    "visitedPlaces": "Radhanagar Beach, The Cellular Jail, Ross Island, Elephant beach, Scuba Diving In Andaman, Howrah Bridge - Andaman, Laxmanpur Beach.",
-    "facility": "Hotel Accommodation (3* Hotel & Twin Basis),Return Air Ticket with all Travel Tax,Return Airport – Hotel – Airport Pickup and Drop Transfer,Daily Buffet Breakfast at Hotel,English Speaking Guide Service,Sightseeing as per our itinerary",
+    "price": 110000,
+    "visitedPlaces": "Rome to Arezzo, Arezzo to Florence to Pisa, Pisa to Monaco to Nice to Cannes to Avignon, Avignon to Paris, Paris to Lucerne, Lucerne to Milan to Venice, Venice to Rome, Rome City Tour.",
+    "facility": "Flights as per the ongoing offer, Accommodation on a twin-sharing basis, Sightseeing as mentioned in the itinerary, Services of our tour manager or local representatives, Daily continental breakfast and 2 dinners included, 1 gala dinner with cocktails, Train/bus/car/boat/ship transfers as mentioned in the itinerary, Assistance in filling up and depositing visa forms, WhatsApp and online assistance 24x7, Welcome kit, Transfer to & from FCO airport - Rome, Rome pass for public transport buses & metros.",
+    "catagory": "Europe",
+    "rating": 5
+  },
+  {
+    "name": "Romantic European Tour Package",
+    "img": "https://i.ibb.co/3hCDWW3/romantic-europe.jpg",
+    "detailImg1": "https://i.ibb.co/Pc8khvF/romantic-europe-1.jpg",
+    "detailImg2": "https://i.ibb.co/ZgNbtBw/romantic-europe-2.jpg",
+    "detailImg3": "https://i.ibb.co/GxBqRZB/romantic-europe-3.jpg",
+    "type": "Business Class",
+    "duration": "11 Days- 10 Nights",
+    "shortDetail": "The second smallest continent in the world, Europe covers 2% of the Earth’s surface and 6.7% of the Earth’s land. With 47 countries and a population of 742.5 million (2013 census), it is the third most populated continent in the world. Bordered by the Atlantic Ocean on the west, Arctic Ocean on the north, Ural mountains in the east, and the Mediterranean Sea to the South, a visit to the European continent is visually magnificent and historically significant.",
+    "price": 108000,
+    "visitedPlaces": "Paris Sightseeing, Paris to Reims to Luxembourg City, Luxembourg to Strasbourg to Freiburg Area, Freiburg Area to Neuschwanstein to Innsbruck, Innsbruck to St. Gallen to Lucerne, Lucerne Sightseeing, Lucerne to Liechtenstein to St. Moritz, St. Moritz to Tirano to Como to Milan, Milan Sightseeing.",
+    "facility": "Flights as per the ongoing offer, Accommodation on a twin-sharing basis, Sightseeing as mentioned in the itinerary, Services of our tour manager or local representatives, Daily continental breakfast and 2 dinners included, 1 gala dinner with cocktails, Train/bus/car/boat/ship transfers as mentioned in the itinerary, Assistance in filling up and depositing visa forms, WhatsApp and online assistance 24x7, Welcome kit.",
+    "catagory": "Europe",
+    "rating": 5
+  },
+  {
+    "name": "Luxury European Holiday Package",
+    "img": "https://i.ibb.co/kB81mZK/luxury-europe.jpg",
+    "detailImg1": "https://i.ibb.co/xSCsZ5M/luxury-europe-1.jpg",
+    "detailImg2": "https://i.ibb.co/QpmRCyS/luxury-europe-2.jpg",
+    "detailImg3": "https://i.ibb.co/gPxTpXg/luxury-europe-3.jpg",
+    "type": "Business Class",
+    "duration": "10 Days- 9 Nights",
+    "shortDetail": "The second smallest continent in the world, Europe covers 2% of the Earth’s surface and 6.7% of the Earth’s land. With 47 countries and a population of 742.5 million (2013 census), it is the third most populated continent in the world. Bordered by the Atlantic Ocean on the west, Arctic Ocean on the north, Ural mountains in the east, and the Mediterranean Sea to the South, a visit to the European continent is visually magnificent and historically significant.",
+    "price": 215000,
+    "visitedPlaces": "Rome to Venice, Venice City Tour, Venice to Paris, Paris City Tour, Paris to Interlaken, Excursion to Grindelwald & Jungfraujoch, Interlaken to Zermatt, Zermatt to Lake Maggiore, Lake Maggiore to Milan to Rome.",
+    "facility": "Flights as per the ongoing offer, Accommodation on a twin-sharing basis, Sightseeing as mentioned in the itinerary, Services of our tour manager or local representatives, Daily continental breakfast and 2 dinners included, 1 gala dinner with cocktails, Train/bus/car/boat/ship transfers as mentioned in the itinerary, Assistance in filling up and depositing visa forms, WhatsApp and online assistance 24x7, Welcome kit.",
     "catagory": "Europe",
     "rating": 5
   }

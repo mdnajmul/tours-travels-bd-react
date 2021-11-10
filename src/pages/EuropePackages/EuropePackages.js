@@ -2,19 +2,19 @@ import React from "react";
 import useAuth from "../../hooks/useAuth";
 import Package from "../Package/Package";
 
-const IndiaPackages = () => {
+const EuropePackages = () => {
   const { packages } = useAuth();
-  const indiaPackages = packages.filter((p) => p.catagory === "India");
+  const europePackages = packages.filter((p) => p.catagory === "Europe");
   return (
     <div>
-      {indiaPackages.length > 0 && (
-        <section id="india" className="container mt-5">
+      {europePackages.length > 0 && (
+        <section id="bangladesh" className="container mt-5">
           <div>
-            <h2 className="text-center text-success fw-bold">India Tours</h2>
+            <h2 className="text-center text-success fw-bold">Europe Tours</h2>
             <hr className="text-center text-red fw-bold" />
           </div>
           <div className="home-services-field mt-3">
-            {indiaPackages.map((p) => (
+            {europePackages.map((p) => (
               <Package key={p._id} package={p}></Package>
             ))}
           </div>
@@ -24,4 +24,4 @@ const IndiaPackages = () => {
   );
 };
 
-export default IndiaPackages;
+export default EuropePackages;

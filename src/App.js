@@ -15,6 +15,7 @@ import TourDetails from "./pages/TourDetails/TourDetails";
 import NotFound from "./pages/NotFound/NotFound";
 import MyOrders from "./pages/MyOrders/MyOrders";
 import IndiaPackages from "./pages/IndiaPackages/IndiaPackages";
+import EuropePackages from "./pages/EuropePackages/EuropePackages";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Slider></Slider>
               <BangladeshPackages></BangladeshPackages>
               <IndiaPackages></IndiaPackages>
+              <EuropePackages></EuropePackages>
             </Route>
             <Route exact path="/home">
               <Header></Header>
@@ -35,6 +37,7 @@ function App() {
               <Slider></Slider>
               <BangladeshPackages></BangladeshPackages>
               <IndiaPackages></IndiaPackages>
+              <EuropePackages></EuropePackages>
             </Route>
             <Route exact path="/login">
               <Header></Header>
