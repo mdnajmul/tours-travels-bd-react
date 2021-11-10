@@ -114,7 +114,7 @@ const Header = () => {
               className="ms-3 text-white fw-bold text-decoration-none mt-2 hover"
               activeClassName="active"
             >
-              Special Packages
+              Special Offers
             </NavLink>
             <NavLink
               to="/contact"

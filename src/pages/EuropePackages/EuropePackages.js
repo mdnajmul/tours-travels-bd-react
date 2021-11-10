@@ -8,7 +8,7 @@ const EuropePackages = () => {
   return (
     <div>
       {europePackages.length > 0 && (
-        <section id="bangladesh" className="container mt-5">
+        <section id="europe" className="container mt-5">
           <div>
             <h2 className="text-center text-success fw-bold">Europe Tours</h2>
             <hr className="text-center text-red fw-bold" />
@@ -17,6 +17,9 @@ const EuropePackages = () => {
             {europePackages.map((p) => (
               <Package key={p._id} package={p}></Package>
             ))}
+          </div>
+          <div>
+            <hr className="text-center text-red fw-bold" />
           </div>
         </section>
       )}

@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import MyOrders from "./pages/MyOrders/MyOrders";
 import IndiaPackages from "./pages/IndiaPackages/IndiaPackages";
 import EuropePackages from "./pages/EuropePackages/EuropePackages";
+import SpecialPackages from "./pages/SpecialPackages/SpecialPackages";
 
 function App() {
   return (
@@ -70,6 +71,10 @@ function App() {
             <Route exact path="/myorders">
               <Header></Header>
               <MyOrders></MyOrders>
+            </Route>
+            <Route exact path="/special">
+              <Header></Header>
+              <SpecialPackages></SpecialPackages>
             </Route>
             <Route path="*">
               <Header></Header>

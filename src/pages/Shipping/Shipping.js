@@ -1,11 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router";
+import { useLocation, useParams } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import "./Shipping.css";
 
 const Shipping = () => {
   let { tourId } = useParams();
+  const location = useLocation();
+  const value = location.search;
   const email = sessionStorage.getItem("email");
   const {
     register,
@@ -13,10 +15,16 @@ const Shipping = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const { user, packages } = useAuth();
+  const { user, packages, specialPackages } = useAuth();
   const onSubmit = (data) => {
-    const orderDetails = packages.filter((p) => p._id === tourId);
-    data.orderDetails = orderDetails;
+    if (value === "?token=special") {
+      const orderDetails = specialPackages.filter((p) => p._id === tourId);
+      data.orderDetails = orderDetails;
+    } else {
+      const orderDetails = packages.filter((p) => p._id === tourId);
+      data.orderDetails = orderDetails;
+    }
+
     data.status = "pending";
     fetch("http://localhost:5000/confirmOrder", {
       method: "POST",
@@ -24,8 +32,12 @@ const Shipping = () => {
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
-      .then((result) => console.log(result));
-    console.log(data);
+      .then((result) => {
+        if (result.insertedId) {
+          alert("Order Placced Successfully!");
+          reset();
+        }
+      });
   };
   return (
     <div className="shipping-form mt-100">

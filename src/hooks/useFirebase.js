@@ -13,6 +13,7 @@ initializeAuthentication();
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [packages, setPackages] = useState([]);
+  const [specialPackages, setSpecialPackages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   //get all packages
@@ -21,6 +22,15 @@ const useFirebase = () => {
       .then((res) => res.json())
       .then((data) => {
         setPackages(data);
+      });
+  }, []);
+
+  //get all special packages
+  useEffect(() => {
+    fetch("http://localhost:5000/specialpackages")
+      .then((res) => res.json())
+      .then((data) => {
+        setSpecialPackages(data);
       });
   }, []);
 
@@ -58,6 +68,7 @@ const useFirebase = () => {
     signInUsingGoogle,
     logOut,
     packages,
+    specialPackages,
     isLoading,
     setIsLoading,
   };

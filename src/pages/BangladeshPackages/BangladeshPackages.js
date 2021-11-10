@@ -23,6 +23,9 @@ const BangladeshPackages = () => {
               <Package key={p._id} package={p}></Package>
             ))}
           </div>
+          <div>
+            <hr className="text-center text-red fw-bold" />
+          </div>
         </section>
       )}
     </div>
