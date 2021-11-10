@@ -34,13 +34,14 @@ const Package = (props) => {
         <hr />
       </p>
       <div className="mb-3 mt-3">
-        <NavLink
-          className="text-decoration-none me-3 header-top-btn"
-          style={{ marginLeft: "140px" }}
-          to={`/tourdetails/${_id}`}
-        >
-          View Details
-        </NavLink>
+        <p className="text-center">
+          <NavLink
+            className="text-decoration-none me-3 header-top-btn"
+            to={`/tourdetails/${_id}`}
+          >
+            View Details
+          </NavLink>
+        </p>
       </div>
     </div>
   );

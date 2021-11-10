@@ -33,13 +33,14 @@ const Special = (props) => {
       </p>
 
       <div className="mb-3 mt-3">
-        <NavLink
-          className="text-decoration-none me-3 header-top-btn"
-          style={{ marginLeft: "130px" }}
-          to={`/shipping/${_id}?token=special`}
-        >
-          Book Now
-        </NavLink>
+        <p className="text-center">
+          <NavLink
+            className="text-decoration-none me-3 header-top-btn"
+            to={`/shipping/${_id}?token=special`}
+          >
+            Book Now
+          </NavLink>
+        </p>
       </div>
       <p className="ps-3 pe-3">
         <hr />
