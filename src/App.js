@@ -17,6 +17,7 @@ import MyOrders from "./pages/MyOrders/MyOrders";
 import IndiaPackages from "./pages/IndiaPackages/IndiaPackages";
 import EuropePackages from "./pages/EuropePackages/EuropePackages";
 import SpecialPackages from "./pages/SpecialPackages/SpecialPackages";
+import Footer from "./pages/Footer/Footer";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <BangladeshPackages></BangladeshPackages>
               <IndiaPackages></IndiaPackages>
               <EuropePackages></EuropePackages>
+              <Footer></Footer>
             </Route>
             <Route exact path="/home">
               <Header></Header>
