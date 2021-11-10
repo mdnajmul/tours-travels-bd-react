@@ -20,6 +20,7 @@ import SpecialPackages from "./pages/SpecialPackages/SpecialPackages";
 import Footer from "./pages/Footer/Footer";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import Summury from "./pages/Summury/Summury";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <BangladeshPackages></BangladeshPackages>
               <IndiaPackages></IndiaPackages>
               <EuropePackages></EuropePackages>
+              <Summury></Summury>
               <Footer></Footer>
             </Route>
             <Route exact path="/home">
@@ -43,6 +45,7 @@ function App() {
               <BangladeshPackages></BangladeshPackages>
               <IndiaPackages></IndiaPackages>
               <EuropePackages></EuropePackages>
+              <Summury></Summury>
               <Footer></Footer>
             </Route>
             <Route exact path="/login">
