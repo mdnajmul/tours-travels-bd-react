@@ -32,6 +32,7 @@ const TourDetails = () => {
   return (
     <section className="container mt-5">
       <h2 className="text-center text-success fw-bold mt-100">{name}</h2>
+
       <div className="img-detail">
         <div>
           <img className="img-fluid" src={detailImg1} alt="" />

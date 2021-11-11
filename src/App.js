@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./context/AuthProvider";
 import AddTourPackage from "./pages/AddTourPackage/AddTourPackage";
+import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 import BangladeshPackages from "./pages/BangladeshPackages/BangladeshPackages";
 import BottomNav from "./pages/BottomNav/BottomNav";
 import Header from "./pages/Header/Header";
@@ -63,46 +64,46 @@ function App() {
               <TourDetails></TourDetails>
               <Footer></Footer>
             </Route>
-            <Route exact path="/shipping/:tourId">
+            <PrivateRoute exact path="/shipping/:tourId">
               <Header></Header>
               <Shipping></Shipping>
               <Footer></Footer>
-            </Route>
-            <Route exact path="/addtour">
+            </PrivateRoute>
+            <PrivateRoute exact path="/addtour">
               <Header></Header>
               <AddTourPackage></AddTourPackage>
               <Footer></Footer>
-            </Route>
-            <Route exact path="/managetour">
+            </PrivateRoute>
+            <PrivateRoute exact path="/managetour">
               <Header></Header>
               <ManageTourPackages></ManageTourPackages>
               <Footer></Footer>
-            </Route>
-            <Route exact path="/manageorders">
+            </PrivateRoute>
+            <PrivateRoute exact path="/manageorders">
               <Header></Header>
               <ManageOrders></ManageOrders>
               <Footer></Footer>
-            </Route>
-            <Route exact path="/myorders">
+            </PrivateRoute>
+            <PrivateRoute exact path="/myorders">
               <Header></Header>
               <MyOrders></MyOrders>
               <Footer></Footer>
-            </Route>
-            <Route exact path="/special">
+            </PrivateRoute>
+            <PrivateRoute exact path="/special">
               <Header></Header>
               <SpecialPackages></SpecialPackages>
               <Footer></Footer>
-            </Route>
-            <Route exact path="/aboutus">
+            </PrivateRoute>
+            <PrivateRoute exact path="/aboutus">
               <Header></Header>
               <About></About>
               <Footer></Footer>
-            </Route>
-            <Route exact path="/contact">
+            </PrivateRoute>
+            <PrivateRoute exact path="/contact">
               <Header></Header>
               <Contact></Contact>
               <Footer></Footer>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <Header></Header>
               <NotFound></NotFound>
