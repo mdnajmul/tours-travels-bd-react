@@ -136,7 +136,7 @@ const Header = () => {
               </NavLink>
             )}
             {user.email && (
-              <span className="ms-3 text-white fw-bold">
+              <span className="ms-3 text-white fw-bold mt-2">
                 Hello ! {user.displayName}
               </span>
             )}
