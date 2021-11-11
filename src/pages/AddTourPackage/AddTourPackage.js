@@ -9,7 +9,7 @@ const AddTourPackage = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/addtourpackage", {
+    fetch("https://floating-citadel-82357.herokuapp.com/addtourpackage", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

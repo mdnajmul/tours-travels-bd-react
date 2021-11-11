@@ -8,13 +8,13 @@ const ManageTourPackages = () => {
   let j = 1;
 
   useEffect(() => {
-    fetch("http://localhost:5000/tourpackages")
+    fetch("https://floating-citadel-82357.herokuapp.com/tourpackages")
       .then((res) => res.json())
       .then((data) => setAllPackages(data));
   }, [reload]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/specialpackages")
+    fetch("https://floating-citadel-82357.herokuapp.com/specialpackages")
       .then((res) => res.json())
       .then((data) => setAllSpecialPackages(data));
   }, [reload]);
@@ -22,9 +22,12 @@ const ManageTourPackages = () => {
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure, you want to delete?");
     if (procced) {
-      fetch(`http://localhost:5000/delteTourPackage/${id}`, {
-        method: "DELETE",
-      })
+      fetch(
+        `https://floating-citadel-82357.herokuapp.com/delteTourPackage/${id}`,
+        {
+          method: "DELETE",
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount) {
@@ -39,9 +42,12 @@ const ManageTourPackages = () => {
   const handleSpecialDelete = (id) => {
     const procced = window.confirm("Are you sure, you want to delete?");
     if (procced) {
-      fetch(`http://localhost:5000/delteSpecialPackage/${id}`, {
-        method: "DELETE",
-      })
+      fetch(
+        `https://floating-citadel-82357.herokuapp.com/delteSpecialPackage/${id}`,
+        {
+          method: "DELETE",
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount) {

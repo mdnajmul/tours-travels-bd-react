@@ -18,7 +18,7 @@ const useFirebase = () => {
 
   //get all packages
   useEffect(() => {
-    fetch("http://localhost:5000/tourpackages")
+    fetch("https://floating-citadel-82357.herokuapp.com/tourpackages")
       .then((res) => res.json())
       .then((data) => {
         setPackages(data);
@@ -27,7 +27,7 @@ const useFirebase = () => {
 
   //get all special packages
   useEffect(() => {
-    fetch("http://localhost:5000/specialpackages")
+    fetch("https://floating-citadel-82357.herokuapp.com/specialpackages")
       .then((res) => res.json())
       .then((data) => {
         setSpecialPackages(data);

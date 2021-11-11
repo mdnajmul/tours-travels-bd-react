@@ -27,7 +27,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="lh-lg">
-                  <Link className="text-decoration-none" to="/aboutus">
+                  <Link className="text-decoration-none" to="/">
                     <FontAwesomeIcon
                       className="font-arrow"
                       icon={faAngleRight}

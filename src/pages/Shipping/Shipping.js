@@ -26,7 +26,7 @@ const Shipping = () => {
     }
 
     data.status = "pending";
-    fetch("http://localhost:5000/confirmOrder", {
+    fetch("https://floating-citadel-82357.herokuapp.com/confirmOrder", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

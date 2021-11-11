@@ -7,7 +7,7 @@ const MyOrders = () => {
   const [reload, setReload] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrders/${email}`)
+    fetch(`https://floating-citadel-82357.herokuapp.com/myOrders/${email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [reload]);
@@ -15,7 +15,7 @@ const MyOrders = () => {
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure, you want to delete?");
     if (procced) {
-      fetch(`http://localhost:5000/delteOrder/${id}`, {
+      fetch(`https://floating-citadel-82357.herokuapp.com/delteOrder/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

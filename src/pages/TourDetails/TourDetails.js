@@ -9,7 +9,7 @@ const TourDetails = () => {
   const [tourPackage, setTourPackage] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/tourpackages/${tourId}`)
+    fetch(`https://floating-citadel-82357.herokuapp.com/tourpackages/${tourId}`)
       .then((res) => res.json())
       .then((data) => setTourPackage(data));
   }, []);
