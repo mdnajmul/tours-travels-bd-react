@@ -135,6 +135,11 @@ const Header = () => {
                 My Orders
               </NavLink>
             )}
+            {user.email && (
+              <span className="ms-5 text-white fw-bold mt-1">
+                Hello ! {user.displayName}
+              </span>
+            )}
             {user.email ? (
               <div className="my-auto">
                 <button
