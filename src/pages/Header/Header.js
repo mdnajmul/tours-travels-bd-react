@@ -76,39 +76,7 @@ const Header = () => {
                 </Nav.Link>
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown
-              title="Admin"
-              className="ms-3 hover"
-              activeClassName="active"
-            >
-              <NavDropdown.Item>
-                <NavLink
-                  to="/managetour"
-                  className="text-secondary fw-bold text-decoration-none hover"
-                  activeClassName="active"
-                >
-                  Manage Tour Packages
-                </NavLink>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <NavLink
-                  to="/addtour"
-                  className="text-secondary fw-bold text-decoration-none hover"
-                  activeClassName="active"
-                >
-                  Add Tour Package
-                </NavLink>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <NavLink
-                  to="/manageorders"
-                  className="text-secondary fw-bold text-decoration-none hover"
-                  activeClassName="active"
-                >
-                  Manage Orders
-                </NavLink>
-              </NavDropdown.Item>
-            </NavDropdown>
+
             <NavLink
               to="/special"
               className="ms-3 text-white fw-bold text-decoration-none mt-2 hover"
@@ -123,6 +91,41 @@ const Header = () => {
             >
               Contact Us
             </NavLink>
+            {user.email && (
+              <NavDropdown
+                title="Admin"
+                className="ms-3 hover"
+                activeClassName="active"
+              >
+                <NavDropdown.Item>
+                  <NavLink
+                    to="/managetour"
+                    className="text-secondary fw-bold text-decoration-none hover"
+                    activeClassName="active"
+                  >
+                    Manage Tour Packages
+                  </NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <NavLink
+                    to="/addtour"
+                    className="text-secondary fw-bold text-decoration-none hover"
+                    activeClassName="active"
+                  >
+                    Add Tour Package
+                  </NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <NavLink
+                    to="/manageorders"
+                    className="text-secondary fw-bold text-decoration-none hover"
+                    activeClassName="active"
+                  >
+                    Manage Orders
+                  </NavLink>
+                </NavDropdown.Item>
+              </NavDropdown>
+            )}
             {user.email && (
               <NavLink
                 to="/myorders"

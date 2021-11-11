@@ -1,7 +1,9 @@
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Nav } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./Footer.css";
 
 const Footer = () => {
@@ -45,13 +47,13 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="lh-lg">
-                  <Link className="text-decoration-none" to="/aboutus">
+                  <NavLink className="text-decoration-none" to="/aboutus">
                     <FontAwesomeIcon
                       className="font-arrow"
                       icon={faAngleRight}
                     />
                     <span className="footer-hover-clr">About Us</span>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="lh-lg">
                   <Link className="text-decoration-none" to="/">
@@ -68,34 +70,46 @@ const Footer = () => {
               <h3 className="text-white">Top Destinations</h3>
               <ul className="text-start">
                 <li className="lh-lg">
-                  <Link className="text-decoration-none" to="/">
+                  <Nav.Link
+                    as={HashLink}
+                    className="text-decoration-none ml-16 lh-0"
+                    to="/#bangladesh"
+                  >
                     <FontAwesomeIcon
                       className="font-arrow"
                       icon={faAngleRight}
                     />
                     <span className="footer-hover-clr">Bangladesh</span>
-                  </Link>
+                  </Nav.Link>
                 </li>
                 <li className="lh-lg">
-                  <Link className="text-decoration-none" to="/">
+                  <Nav.Link
+                    as={HashLink}
+                    className="text-decoration-none ml-16 mt-9"
+                    to="/#india"
+                  >
                     <FontAwesomeIcon
                       className="font-arrow"
                       icon={faAngleRight}
                     />
                     <span className="footer-hover-clr">India</span>
-                  </Link>
+                  </Nav.Link>
                 </li>
                 <li className="lh-lg">
-                  <Link className="text-decoration-none" to="/">
+                  <Nav.Link
+                    as={HashLink}
+                    className="text-decoration-none ml-16 mt-9"
+                    to="/#europe"
+                  >
                     <FontAwesomeIcon
                       className="font-arrow"
                       icon={faAngleRight}
                     />
                     <span className="footer-hover-clr">Europe</span>
-                  </Link>
+                  </Nav.Link>
                 </li>
                 <li className="lh-lg">
-                  <Link className="text-decoration-none" to="/">
+                  <Link className="text-decoration-none" to="/special">
                     <FontAwesomeIcon
                       className="font-arrow"
                       icon={faAngleRight}
@@ -104,7 +118,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="lh-lg">
-                  <Link className="text-decoration-none" to="/">
+                  <Link className="text-decoration-none" to="/special">
                     <FontAwesomeIcon
                       className="font-arrow"
                       icon={faAngleRight}
