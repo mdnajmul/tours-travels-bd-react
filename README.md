@@ -8,6 +8,10 @@ Tours Travels BD is leading tour operator of Bangladesh and we are member of Int
 
 ## Project Description
 
+- This is a tour package related & fully responsive website.
+- Booking packages users need login via Google or Email/Password
+- After successful login, users can see their all orders
+- Admin can add tour packages, manage tour packages, manage orders.
 - Here All Types of Tours Packages Available
 - We Provide More Than 50 Destination
 - We Provide More Than 200 Special Packages

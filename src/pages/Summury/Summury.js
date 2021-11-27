@@ -7,6 +7,12 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Summury.css";
+/*
+Test Rides: 24622
+Total Sold: 6132
+Test Hired: 7547
+Happy Customer: 12321
+*/
 
 const Summury = () => {
   return (
